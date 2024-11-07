@@ -6,7 +6,7 @@ Name : NELLORE BHANU SREE
 #include <stdio.h>
 
 
-int reverse(int arr[], int start, int end)
+void reverse(int arr[], int start, int end)
 {
     while (start < end) 
     {
