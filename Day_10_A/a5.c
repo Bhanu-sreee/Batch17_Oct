@@ -8,19 +8,19 @@ Name : Bhanu sree
 
 void printAlphabetTriangle(int n)
 {
-    for (int i = 0; i < n; i++) 
+    for (int i=0; i<n; i++) 
     {
-        for (int j = 0; j < n - i - 1; j++) 
+        for (int j=0; j<n-i-1; j++) 
         {
             printf(" ");
         }
        
-        for (int j = 0; j <= i; j++) 
+        for (int j=0; j<=i; j++) 
         {
             printf("%c", 'A' + j);
         }
         
-        for (int j = i - 1; j >= 0; j--) 
+        for (int j=i-1;j>=0;j--) 
         {
             printf("%c", 'A' + j);
         }
@@ -31,14 +31,15 @@ void printAlphabetTriangle(int n)
 
 void numTriangle(int n) 
 {
-    for (int i = 1; i <= n; i++) 
+    for (int i=1; i<=n;i++) 
     {
-        printf("%*c", n - i + 1, ' '); 
-        for (int j = 1; j <= i; j++) 
+        printf("%*c",n-i+1, ' '); 
+        for (int j=1; j<=i; j++) 
         {
-            printf("%d", j);
+            printf("%d",j);
         }
-        for (int j = i - 1; j >= 1; j--) {
+        for (int j=i-1;j>=1;j--)
+        {
             printf("%d", j);
         }
 
