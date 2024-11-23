@@ -121,38 +121,7 @@ int main(int argc, char *argv[]) {
     return SUCCESS;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-f. Specify atleast 6 test cases (positive and negative ) to test command line inputs and update operations
-
-Test Case No. Command Line Arguments Expected Result
-
-1 ./server AppServer 192.168.1.1 8080 Displays the configuration correctly.
-
-2 ./server AppServer 256.256.256.256 8080 Error: Invalid IP address format.
-
-3 ./server AppServer 192.168.1.1 100 Error: Port number must be between 1024 and 65535.
-
-4 ./server AppServerWithVeryLongName 192.168.1.1 8080 Error: Name exceeds maximum length (40).
-
-5 ./server AppServer 192.168.1.1 65535 Displays the configuration correctly.
-
-6 ./server Error: Usage message displayed indicating required arguments.
-
-
-g. Check for memory leaks and fix them.
-
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 2. Implement a log() with signature as below to display all the input arguments as per their type. [Hint: In log() , use vfprintf() to display the received inputs]
